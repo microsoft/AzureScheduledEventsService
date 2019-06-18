@@ -1,7 +1,7 @@
-#Azure Scheduled Events Service
+# Azure Scheduled Events Service
 This project enables your Azure Virtual Machines to subscribe to [Scheduled Events](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/scheduled-events) which informs your application about upcoming Azure Maintenance. The project is for Windows Virtual Machines and contains a powershell script that listens and logs the events to Windows Event logs. These logs can be then exported to [Azure Monitor](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/oms-windows) to then build alerting.
 
-#Steps
+# Steps
 1. Place the SchService.ps1 on your Azure Windows Virtual Machine
 2. Open a PowerShell command and run the following command to setup the Service.
 .\SchService.ps1 -Setup
